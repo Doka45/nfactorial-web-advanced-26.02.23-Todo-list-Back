@@ -1,0 +1,196 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.main {
+  display:grid;
+  grid-template-columns: 2fr 2fr;
+  padding-top: 10px;
+}
+
+
+.red{
+  height: 40px;
+  background-color: red;
+}
+
+.blue{
+  height: 40px;
+  background-color: blue;
+}
+
+.main1 {
+  display:grid;
+  grid-template-columns: 12fr 0.5fr;
+  padding-top: 10px;
+}
+
+.green{
+  height: 40px;
+  background-color: green;
+}
+
+.blue1{
+  height: 40px;
+  background-color: blue;
+}
+
+.main2 {
+  display:grid;
+  grid-template-columns: 0.5fr 12fr 0.5fr;
+  padding-top: 10px;
+}
+
+.red1{
+  height: 40px;
+  background-color: red;
+}
+
+.green{
+  height: 40px;
+  background-color: green;
+}
+
+.blue1{
+  height: 40px;
+  background-color: blue;
+}
+
+.main3 {
+  display:grid;
+  grid-template-columns: 12fr 0.5fr;
+  padding-top: 10px;
+}
+
+.red2{
+  height: 40px;
+  background-color: red;
+}
+
+.blue2{
+  height: 40px;
+  background-color: blue;
+}
+.main4 {
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 50px;
+}
+
+.blue3{
+    height: 40px;
+  background-color: green;
+}
+
+.red3 {
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  position: sticky;
+  
+    
+}
+
+
+.main5 {
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 50px;
+}
+
+.blue4{
+    height: 40px;
+  background-color: green;
+}
+
+.red4 {
+  height: 40px;
+  width: 60px;
+  background-color: blue;
+  position: static;
+  left: 0;
+    
+}
+
+.main6{
+background: blue;
+  /* display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; */
+  height: 40px;
+  padding: 0 50px;
+}
+
+.blue5{
+  height: 15px;
+  width: 1390px;
+  
+  background-color: blue;
+  
+}
+
+.blue6{
+  height: 11px;
+  width: 1390px;
+  
+  background-color: green;
+}
+
+.red5{
+  height: 40px;
+  width: 60px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+    
+}
+
+
+.main7 button:nth-child(even) {
+    background-color:red;
+}
+
+.main7{
+    background-color: orange;
+    display: flex;
+}
+
+.main7 div {
+    flex:1;
+    height: 40px;
+}
+
+.main7 div:nth-child(even) {
+    flex:5;
+    background-color:green;
+} 
+
+.main8 button:nth-child(even) {
+    background-color:red;
+}
+
+.main8{
+    background-color: orange;
+    display: flex;
+    /* flex:1; */
+     /* height: 40px;
+  width: 60px; */
+}
+
+.main8 div {
+    flex:7;
+    min-width: 50px;
+    height: 40px;
+    /* width: 15px; */
+}
+
+.main8 div:nth-child(even) {
+    flex:5;
+    background-color:green;
+} 
