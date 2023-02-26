@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo list</title>
+</head>
+<body>
+    <div class="container">
+        <div class ="Todo" style="--clr:#1e9bff">
+        <h1 >Todo list</h1>
+        </div>
+       
+        <form action="/" method="POST" autocomplete="off">
+            <input class ="search" style="--clr:#1e9bff" type="text" placeholder="бірдеңе жазшы..." name="todoValue" required>
+            <button class="buttonAdd" style="--clr:#1e9baf" type="submit"> Add</button>
+        </form>
+        
+        <% if(data) {%>
+            <%  data.forEach(todoValue => {%>
+                <div class="todo-container">
+                    <div class="todo-value"><%= todoValue.todo %> </div>
+                    <div>
+                        <button style="--clr:#1e9baf" class="todo-delete  <%= todoValue.id %>">Delete</button>
+                    </div>
+                </div>
+            <% })%>
+         <% }%>
+    </div>
+    <!-- <img src="img/nf2.png" alt="nf"> -->
+    <script>
+        const deleteButton = document.querySelectorAll(".todo-delete")
+
+        deleteButton.forEach((button, i) => {
+            button.addEventListener("click", () => {
+                const endPoint = `/${button.classList[1]}` 
+                fetch(endPoint, {
+                    method: "DELETE"
+                })
+                window.location.href = "/"
+            })
+        })
+    </script>
+    
+</body>
+</html>

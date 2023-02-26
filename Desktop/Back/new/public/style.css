@@ -1,0 +1,71 @@
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    background: #ffffffc0;
+}
+
+.Todo {
+    position: relative;
+    /* background: #524c4cc0; */
+    color:rgb(16, 16, 16);  
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding:10px;
+    transition: 0.5s;
+    border-radius: 0.15rem;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* margin: 50px; */
+
+}
+
+.Todo:hover {
+    background: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+
+.search:hover {
+    background: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+.buttonAdd {
+    font-size: 1rem;
+    /* display: inline-block; */
+    cursor: pointer;
+    text-decoration: none;
+    border: currentColor 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    background: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+    
+}
+
+.todo-delete {
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    background: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+.search {
+    font-size: 1rem;
+    display: inline-block;
+}
